@@ -13,8 +13,5 @@ router.post("/signup", signUp);
 // Login Route
 router.post("/login", login);
 
-// Forgot Password Routes
-//router.post("/forgot-password", forgotPassword);
-//router.post("/verify-otp", verifyOtp);
 
 export default router;

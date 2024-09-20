@@ -33,7 +33,7 @@ This backend server is built with Node.js, Express, and MongoDB. It provides API
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Faisal-rio/LMS.Last-backend
    cd your-repository
    npm install
 

@@ -11,7 +11,12 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://unlucky-happylearning-simple.netlify.app/login', // Replace with your actual Netlify URL
+  methods: 'GET, POST, PUT, DELETE, OPTIONS',
+  allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept',
+}));
+
 app.use(express.json());
 
 // MongoDB connection

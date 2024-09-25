@@ -10,15 +10,8 @@ dotenv.config();
 
 const app = express();
 
-// Configure CORS options
-const corsOptions = {
-  origin: ['http://localhost:5000', 'https://unlucky-happylearning-simple.netlify.app/'], // Replace with your frontend URL(s)
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Allow credentials
-};
-
 // Middleware
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
